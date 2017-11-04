@@ -1,2 +1,9 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+body{ background-color: #FFFFBB }
+
+hr.bar {
+  border: 2px solid #ff6600;
+  text-align: center;
+}

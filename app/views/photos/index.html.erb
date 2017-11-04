@@ -1,4 +1,18 @@
-<table class="table table-striped table-condensed">
+<div class="container">
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h1>
+  <%="照片分享區" %>
+</h1>
+<p><%="一起分享回憶的照片吧！" %></p>
+<hr class="bar">
+<table class="table table-hover">
+  <tr>
+    <th><%= "標題" %></th>
+    <th><%= "查看" %></th>
+    <th><%= "編輯" %></th>
+    <th><%= "刪除" %></th>
+  </tr>
  <% @photos.each do |photo| %>
    <tr>
      <td><%= photo.title %></td>
@@ -8,5 +22,9 @@
    </tr>
  <% end %>
 </table>
+<button type="button" class="btn btn-default btn-lg">
+  <%= link_to '新增照片', new_photo_path %></button>
+</div>
+</div>
+</div>
 
-<%= link_to 'New Photo', new_photo_path %>
